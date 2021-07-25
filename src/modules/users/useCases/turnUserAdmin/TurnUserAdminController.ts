@@ -8,9 +8,13 @@ class TurnUserAdminController {
   handle(request: Request, response: Response): Response {
     const { user_id } = request.params;
 
-    const admin = this.turnUserAdminUseCase.execute({ user_id });
+    try {
+      const admin = this.turnUserAdminUseCase.execute({ user_id });
 
-    return response.status(201).json(admin);
+      return response.status(201).json(admin);
+    } catch (error) {
+      return response.status(404).json({ error });
+    }
   }
 }
 
