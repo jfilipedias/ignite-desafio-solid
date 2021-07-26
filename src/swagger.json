@@ -1,0 +1,14 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "atlas",
+    "description": "Esta é uma documentação sobre a Atlas API.",
+    "version": "1.0.0",
+    "contact": {
+      "email": "filipediascontato@gmail.com"
+    }
+  },
+  "paths": {
+    
+  }
+}
